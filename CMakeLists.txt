@@ -236,6 +236,8 @@ if(IMobileDevice_FOUND AND PList_FOUND)
     add_subdirectory(afc)
 endif()
 
+add_subdirectory(rsync)
+
 configure_file (config-runtime.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-runtime.h )
 
 ecm_qt_install_logging_categories(
